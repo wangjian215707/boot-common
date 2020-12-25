@@ -1,0 +1,10 @@
+1、该模块主要用于CAS登录验证及安全管理
+2、只适用于客戶端模块，且客户端依赖于fegin,
+3、server.custom.security.matcher 设置不登录url地址
+4、server.custom.security.csrf 设置不启用csrf验证地址
+5、eureka.custom.login.server-id 设置登录服务名称，用户登录接口使用
+6、添加cas相关配置项
+   a、server.custom.cas.server.host
+   b、server.custom.cas.client.host
+   c、server.custom.cas.client.login
+   d、server.custom.cas.client.logout

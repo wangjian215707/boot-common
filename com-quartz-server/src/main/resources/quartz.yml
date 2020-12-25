@@ -1,0 +1,19 @@
+org:
+  quartz:
+    scheduler:
+      instanceName: schedulerFactoryBean
+      instanceId: AUTO #默认主机名和时间戳生成实例ID,可以是任何字符串，但对于所有调度程序来说，必须是唯一的，集群使用
+    jobStore:
+      class: org.quartz.impl.jdbcjobstore.JobStoreTX
+      driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+      tablePrefix: QRTZ_
+      useProperties: false
+      isClustered: true #开启分布式部署
+      clusterCheckinInterval: 10000 #分布式节点有效性检查时间间隔，单位毫秒
+    threadPool:
+      class: org.quartz.simpl.SimpleThreadPool #实例化ThreadPool时，使用的线程类为SimpleThreadPool
+      # 并发个数 如果你只有几个工作每天触发几次那么1个线程就可以,如果你有成千上万的工作，每分钟都有很多工作 那么久需要50-100之间.
+      # 只有1到100之间的数字是非常实用的
+      threadCount: 10
+      threadPriority: 5
+      threadsInheritContextClassLoaderOfInitializingThread: true #配置是否启动自动加载数据库内的定时任务，默认true

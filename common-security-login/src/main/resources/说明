@@ -1,0 +1,8 @@
+1、该模块主要用于登录验证及安全管理
+2、该模块不适合前后端分离模块，只适用于管理端模块
+3、模块依赖于common-orm模块
+4、该模块可以用于用户管理
+5、由于提供了用户管理模块，提供swagger 接口文档功能
+6、关于 swagger 的一些配置
+7、server.custom.security.matcher 设置不登录url地址
+8、server.custom.security.csrf 设置不启用csrf验证地址

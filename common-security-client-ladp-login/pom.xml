@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>boot-common</artifactId>
+        <groupId>com.github.edu.boot2.common</groupId>
+        <version>2.2-RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>common-security-client-ladp-login</artifactId>
+    <version>2.2.5-RELEASE</version>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.edu.boot2.common</groupId>
+            <artifactId>common-client</artifactId>
+            <version>2.2.1-RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ldap</groupId>
+            <artifactId>ice</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ldap</groupId>
+            <artifactId>jakarta-regexp</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ldap</groupId>
+            <artifactId>idstar</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>maven-hosted-wangjian</id>
+            <url>http://web1dev.apexedu.com.cn:8081/repository/maven-hosted-wangjian</url>
+        </repository>
+    </distributionManagement>
+    <repositories>
+        <!-- apex的私有仓库 -->
+        <repository>
+            <id>apexedu-nexus</id>
+            <url>http://web1dev.apexedu.com.cn:8081/repository/maven-public/</url>
+        </repository>
+    </repositories>
+</project>

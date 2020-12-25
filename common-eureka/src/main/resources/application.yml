@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: boot-eureka-server #设置服务mingc
+  security:
+    user:
+      name: admin
+      password: 123
+server:
+  port: 8761
+eureka:
+  instance:
+    ip-address: 192.168.100.160 #绑定ip地址
+    prefer-ip-address: true #是否绑定ip地址，多网卡时启用
+    hostname: 192.168.100.160
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: true #关闭自我保护
+    eviction-interval-timer-in-ms: 30000 #清理无效节点时间
+logging:
+  file: ./euerka/log
+  level:
+    root-info: info
+    org:
+      springframework:
+        web: info

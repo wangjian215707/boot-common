@@ -1,0 +1,5 @@
+1、此模块为普通公众号模块,里面提供公众号相关接口
+2、此模块需要引入：common-client-2.1-SNAPSHOT，lombok
+3、ehcache.xml配置文件需要添加：manager_access_token,web_access_token
+4、配置文件添加weixin.custom.appid
+               weixin.custom.secret

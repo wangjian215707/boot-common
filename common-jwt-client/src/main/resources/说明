@@ -1,0 +1,6 @@
+#####此模块为服务提供方提供权限校验功能######
+1、配置文件添加 -- server.custom.token.jwt.kayName 设置的是获取token中客户端信息的key值
+2、配置文件添加 -- server.custom.token.header.token-header 设置保存token的header名称
+3、配置文件添加 -- server.custom.token.header.client-id 设置保存客户端公钥的header名称
+4、配置文件添加 -- server.custom.token.jwt.path 设置需要验证的请求地址
+5、配置文件添加 -- server.custom.token.jwt.excludePath 设置无需验证的地址

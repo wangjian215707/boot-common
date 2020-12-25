@@ -1,0 +1,8 @@
+#############此模块主要用于客户端过滤拦截，如使用Feign 客户端时，向请求客户端头信息中，添加 token等信息
+1、配置文件添加---server.custom.token.header.token-header 设置保存token的header名称
+2、配置文件添加---server.custom.token.header.client-id 设置保存客户端公钥的header名称
+3、配置文件添加---server.custom.token.jwt.client-key 设置客户端公钥
+4、配置文件添加---server.custom.token.jwt.client-id 设置客户端编号
+5、配置文件添加---server.custom.token.jwt.server-path 设置服务端地址
+6、必须引入 httpclient 版本4.5.X
+7、Cacheable 配置文件添加 -- jwt_token

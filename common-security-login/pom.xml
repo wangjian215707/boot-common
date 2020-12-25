@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>boot-common</artifactId>
+        <groupId>com.github.edu.boot2.common</groupId>
+        <version>2.2-RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>common-security-login</artifactId>
+    <version>2.1-RELEASE</version>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.github.edu.boot2.common</groupId>
+            <artifactId>common-orm</artifactId>
+            <version>2.2.2-RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>1.6.0.RELEASE</version>
+        </dependency>
+    </dependencies>
+   <!-- <distributionManagement>
+        <repository>
+            <id>maven-hosted-wangjian</id>
+            <url>https://maven.apexedu.com.cn/repository/maven-hosted-wangjian</url>
+        </repository>
+    </distributionManagement>-->
+<!--    <distributionManagement>
+        <repository>
+            <id>maven-hosted-wangjian</id>
+            <url>http://web1dev.apexedu.com.cn:8081/repository/maven-hosted-wangjian</url>
+        </repository>
+    </distributionManagement>
+    <repositories>
+        &lt;!&ndash; apex的私有仓库 &ndash;&gt;
+        <repository>
+            <id>apexedu-nexus</id>
+            <url>http://web1dev.apexedu.com.cn:8081/repository/maven-public/</url>
+        </repository>
+    </repositories>-->
+</project>

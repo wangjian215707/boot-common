@@ -1,0 +1,9 @@
+#############本服务主要用于token获取############
+1、状态码设置说明：
+a、4002：接收参数异常，没有接收到客户端编号或者没有接收到客户端公钥；
+b、4001：未授权的客户端；
+2、配置说明，引用模块时，初始化jwt.sql文件，初始化时，注意修改表空间;
+3、配置文件中添加配置，-- server.custom.token.jwt.pri-key 设置私钥
+4、配置文件中添加配置，-- server.custom.token.jwt.kayName 此值必须和客户端保持一致
+5、Cacheable 配置文件添加 -- jwt_token
+6、sql--模板数据：clientNY	7200	apexedu	apexsoft	1
