@@ -2,12 +2,62 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="boot-common" />
+        <module name="common-orm" />
+        <module name="common-security-login" />
+        <module name="common-security-login-v2" />
+        <module name="common-error" />
+        <module name="common-security-client-ladp-login" />
+        <module name="common-logger" />
+        <module name="common-weixin-qyh-security-oauth2-login" />
+        <module name="common-eureka" />
+        <module name="common-security-client-cas-login" />
+        <module name="common-admin" />
+        <module name="common-security-client-oauth2-login" />
+        <module name="common-weixin-gzh-client" />
+        <module name="common-jwt" />
+        <module name="com-quartz-server" />
+        <module name="common-security-client-login" />
+        <module name="common-jwt-server" />
+        <module name="common-weixin-gzh-security-cas-login" />
+        <module name="common-restful-login" />
+        <module name="common-swagger" />
+        <module name="common-jwt-client" />
+        <module name="common-weixin-server" />
+        <module name="common-client" />
+        <module name="common-weixin-qyh-security-casrest-login" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com-quartz-server" options="-parameters" />
+      <module name="common-admin" options="-parameters" />
+      <module name="common-client" options="-parameters" />
+      <module name="common-error" options="-parameters" />
+      <module name="common-eureka" options="-parameters" />
+      <module name="common-jwt" options="-parameters" />
+      <module name="common-jwt-client" options="-parameters" />
+      <module name="common-jwt-server" options="-parameters" />
+      <module name="common-logger" options="-parameters" />
+      <module name="common-orm" options="-parameters" />
+      <module name="common-restful-login" options="-parameters" />
+      <module name="common-security-client-cas-login" options="-parameters" />
+      <module name="common-security-client-ladp-login" options="-parameters" />
+      <module name="common-security-client-login" options="-parameters" />
+      <module name="common-security-client-oauth2-login" options="-parameters" />
+      <module name="common-security-login" options="-parameters" />
+      <module name="common-security-login-v2" options="-parameters" />
+      <module name="common-swagger" options="-parameters" />
+      <module name="common-weixin-gzh-client" options="-parameters" />
+      <module name="common-weixin-gzh-security-cas-login" options="-parameters" />
+      <module name="common-weixin-qyh-security-casrest-login" options="-parameters" />
+      <module name="common-weixin-qyh-security-oauth2-login" options="-parameters" />
+      <module name="common-weixin-server" options="-parameters" />
+    </option>
   </component>
 </project>
