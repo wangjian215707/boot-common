@@ -10,6 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
+ * 自定义JPA接口
  * 自定义JAP接口
  * Created by 王建 on 2017/6/9.
  */
