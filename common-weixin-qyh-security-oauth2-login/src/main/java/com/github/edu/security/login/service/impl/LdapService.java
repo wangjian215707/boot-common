@@ -27,9 +27,13 @@ public class LdapService {
         env.put(Context.INITIAL_CONTEXT_FACTORY, ldapFactory);
         // LDAP server
         env.put(Context.PROVIDER_URL, ldapUrl);
+
         env.put(Context.SECURITY_AUTHENTICATION, "simple");
+
         env.put(Context.SECURITY_PRINCIPAL, ldapAccount);
+
         env.put(Context.SECURITY_CREDENTIALS, ldapPwd);
+
         env.put("java.naming.referral", "follow");
         LdapContext ctxTDS = null;
         try {
