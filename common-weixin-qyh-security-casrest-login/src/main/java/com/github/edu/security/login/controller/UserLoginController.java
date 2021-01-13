@@ -58,8 +58,10 @@ public class UserLoginController {
     @Value("${weixin.custom.corpsecret}")
     private String customCorpsecret;
     @Value("${weixin.custom.domain}")
+
     private String domainstr;
     @Value("${weixin.custom.cas-domain}")
+
     private String casDomain;
     @Autowired
     private AccessTokenService tokenService;

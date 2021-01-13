@@ -9,5 +9,6 @@ package com.github.edu.security.login.company.service;
  * 主动推送消息接口
  */
 public interface SMessageApi {
+
     String STextMessage(String accessToken, MessageSend messageSend);
 }
